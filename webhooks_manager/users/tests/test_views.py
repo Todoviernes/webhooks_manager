@@ -12,11 +12,7 @@ from django.utils.translation import gettext_lazy as _
 from webhooks_manager.users.forms import UserAdminChangeForm
 from webhooks_manager.users.models import User
 from webhooks_manager.users.tests.factories import UserFactory
-from webhooks_manager.users.views import (
-    UserRedirectView,
-    UserUpdateView,
-    user_detail_view,
-)
+from webhooks_manager.users.views import UserRedirectView, UserUpdateView, user_detail_view
 
 pytestmark = pytest.mark.django_db
 

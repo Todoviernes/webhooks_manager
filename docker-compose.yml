@@ -49,14 +49,14 @@ services:
       - ./config:/app/config:z
       - ./webhooks_manager:/app/webhooks_manager:z
     ports:
-      - '9000:9000'
+      - '9090:9090'
     command: /start-docs
 
   mailpit:
     image: axllent/mailpit:v1.8
     container_name: webhooks_manager_local_mailpit
     ports:
-      - "8025:8025"
+      - '8025:8025'
 
   redis:
     image: redis:6
