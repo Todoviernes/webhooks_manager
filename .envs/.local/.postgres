@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=webhooks_manager
+POSTGRES_USER=nVocMDshVWvosFqyrSVnPhLeCrFIApAi
+POSTGRES_PASSWORD=Hm5fBOkzWyTti2i9afDaSpFmit8RdWxsiMZZ5isuw8bhoFrAKYvjz5RFynVXmAKZ
