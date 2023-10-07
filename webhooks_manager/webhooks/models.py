@@ -1,5 +1,7 @@
 from django.db import models
+
 from webhooks_manager.utils.models import ManagerModel, SlugModel
+
 
 # Create your models here.
 class Source(ManagerModel, SlugModel):
@@ -8,9 +10,10 @@ class Source(ManagerModel, SlugModel):
     def __str__(self):
         return self.name
 
+
 class Webhook(ManagerModel):
     source = models.ForeignKey(Source, on_delete=models.CASCADE)
     data = models.JSONField()
 
     def __str__(self):
-        return self.name
+        return self.source.name
